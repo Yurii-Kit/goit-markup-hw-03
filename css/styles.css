@@ -30,7 +30,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-.conteiner {
+.container {
   max-width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
@@ -43,7 +43,7 @@ img {
   display: block;
   border-bottom: 1px solid #e7e9fc;
 }
-.header-conteiner {
+.header-container {
   display: flex;
   align-items: center;
 }
@@ -113,7 +113,7 @@ img {
 .section-hero {
   background-color: #2e2f42;
   color: #fff;
-  padding: 188px 422px;
+  padding: 188px 0;
 }
 
 .hero-title {
@@ -123,7 +123,7 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  width: 496px;
+  max-width: 496px;
   margin-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
@@ -144,21 +144,24 @@ img {
   min-height: 56px;
   border: 0px;
   text-align: center;
+  cursor: pointer;
 }
 
 .section-hero .hero-button:hover,
 .section-hero .hero-button:focus {
   background: #404bbf;
-  cursor: pointer;
 }
 
 /* #endregion Hero */
 
 /* #region Features */
 .features {
-  padding-top: 123px;
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
+.features-title {
+  visibility: hidden;
+}
+
 .features-list {
   display: flex;
   gap: 24px;
@@ -215,7 +218,7 @@ img {
 }
 
 .team-item-wrapper {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 .team-subtitle {
   font-weight: 500;
@@ -242,6 +245,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  row-gap: 48px;
 }
 .portfolio-card {
   flex-basis: calc((100% - 48px) / 3);
@@ -281,6 +285,10 @@ img {
   padding: 100px 0;
   background-color: #2e2f42;
 }
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
 .footer-logo .logo-part {
   color: #f4f4fd;
 }
@@ -295,6 +303,5 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  margin-top: 16px;
 }
 /* #endregion Features */
